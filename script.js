@@ -24,11 +24,6 @@ function loescheText() {
   let ausgabeListe = document.getElementById("ausgabeListe");
   ausgabeListe.innerHTML = "";
 
-  // Textliste in der HTML darstellen
-  textListe.forEach(function(text, index) {
-    ausgabeListe.innerHTML += (index + 1) + ". " + text + "<br>";
-  });
-
   // "Löschen"-Button ausblenden, wenn die Liste leer ist
   let loeschenButton = document.getElementById("loeschenButton");
   if (textListe.length == 0) {
