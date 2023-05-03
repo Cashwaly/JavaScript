@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Meine Seite mit einem Array</title>
-  </head>
-  <body>
-    <div id="meinArray"></div>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <title>Meine Textliste</title>
+</head>
+<body>
+
+  <h1>Meine Textliste</h1>
+
+  <label for="textInput">Text eingeben:</label>
+  <input type="text" id="textInput">
+
+  <button onclick="addText()">Hinzufügen</button>
+
+  <br><br>
+
+  <div id="ausgabeListe"></div>
+
+  <button id="loeschenButton" onclick="loescheText()" style="display:none;">Letzten Eintrag löschen</button>
+
+  <script src="script.js"></script>
+</body>
 </html>
